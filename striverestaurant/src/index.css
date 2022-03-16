@@ -35,6 +35,10 @@ p{
   height: 22rem;
   box-shadow: 1px 1px 9px;
 }
+.selected{
+  height: 22rem;
+  box-shadow: 1px 1px 20px green;
+}
 
 .imageDiv{
   width: 100%;
@@ -47,6 +51,13 @@ p{
   gap: 10px;
 }
 
+.title{
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .button{
   margin: 0px 10px;
 }
@@ -57,4 +68,14 @@ p{
   border-radius: 6px;
   color: white;
   background-color: rgb(66, 162, 101);
+}
+.searchBar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchBar >input{
+  align-self: flex-start;
+  border: 1px solid gray;
+  border-radius: 6px;
 }
